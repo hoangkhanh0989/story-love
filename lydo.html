@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lý do</title>
+    <link rel="stylesheet" href="./assets/styles/lydo.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Theo bạn, lý do là gì?</h2>
+      <select id="reasonSelect">
+        <option value="">-- Chọn lý do --</option>
+        <option value="notgood">Vì tôi không đủ tốt</option>
+        <option value="distance">Vì vấn đề địa lý</option>
+      </select>
+      <button onclick="checkReason()">Xác nhận</button>
+      <div id="reasonMsg" class="error"></div>
+    </div>
+
+    <div id="centerMsg" class="center-msg">Thường là vậy mà</div>
+    <script src="./assets/logic/lydo.js"></script>
+  </body>
+</html>

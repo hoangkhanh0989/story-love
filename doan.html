@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đoán dịp tỏ tình</title>
+    <link rel="stylesheet" href="./assets/styles/doan.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Bạn nghĩ tôi đã tỏ tình vào dịp nào?</h2>
+      <select id="occasionSelect">
+        <option value="">-- Chọn dịp --</option>
+        <option value="noel">Noel</option>
+        <option value="trungthu">Trung thu</option>
+        <option value="tet">Tết</option>
+        <option value="sinhnhat">Sinh nhật</option>
+      </select>
+      <button class="doan" onclick="checkOccasion()">Đoán</button>
+      <div id="msg" class="error"></div>
+    </div>
+
+    <div id="centerMsg" class="center-msg"></div>
+    <script src="./assets/logic/doan.js"></script>
+  </body>
+</html>

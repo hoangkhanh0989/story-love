@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suy nghĩ</title>
+    <link rel="stylesheet" href="./assets/styles/suynghi.css" />
+  </head>
+  <body>
+    <h1>Khi ở trong tình cảnh này thì tôi đã nghĩ như thế nào?</h1>
+    <p>
+      Đây cũng là quyết định khó nhất trong câu chuyện tình cảm của tôi, nó trở
+      thành một bài toán cho đến nay tôi vẫn chưa thể giải được
+    </p>
+
+    <div>
+      <button
+        class="leave"
+        onclick="showPopup('Chúng tôi đang sống với nhau kiểu tập thể (có sự góp mặt của cô ấy), nếu giờ tôi rời đi thì sẽ ảnh hưởng đến tập thể, vì cái lý do của tôi chỉ là vì một người mà rời đi thì nó sẽ phá vỡ sự cân bằng và vui vẻ vốn có. Tôi cảm thấy suy nghĩ ấy quá ích kỷ, chưa kể nếu tôi rời đi thì 1 2 bạn khác cũng sẽ rời đi như tôi mặc dù tôi chỉ muốn đi 1 mình.')"
+      >
+        Rời đi
+      </button>
+      <button
+        class="stay"
+        onclick="showPopup('Hướng này không ảnh hưởng đến ai nhưng chính tôi là người đau nhất mỗi lần kìm nén cảm xúc của mình, vì gần mặt nhưng cách lòng.')"
+      >
+        Ở lại
+      </button>
+    </div>
+
+    <div class="gmail">
+      <a href="./gmail.html">Bạn có ý kiến gì thì có thể viết ở đây nha</a>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p id="popup-text"></p>
+        <button class="close-btn" onclick="closePopup()">Đóng</button>
+      </div>
+    </div>
+
+    <!-- Nút quay về -->
+    <div>
+      <a href="ketluan.html" class="back-btn">⬅ Quay lại</a>
+      <a href="modau.html" class="back-btn">⬅ Trang chính</a>
+    </div>
+    <script src="./assets/logic/suynghi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #1b2735,
+    #090a0f
+  );
+  background-size: 400% 400%;
+  animation: mysticMove 20s ease infinite;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@keyframes mysticMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.box {
+  max-width: 800px;
+  background: rgba(20, 20, 35, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.5), 0 0 40px rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 26px;
+  color: #bb86fc;
+  text-shadow: 0 0 8px rgba(187, 134, 252, 0.7), 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #ffd166, #ff9a8b);
+  color: #222;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 209, 102, 0.4),
+    0 2px 6px rgba(255, 154, 139, 0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 209, 102, 0.6),
+    0 0 25px rgba(255, 154, 139, 0.5), 0 0 35px rgba(255, 209, 102, 0.4);
+  color: #fff;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.center-msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px 50px;
+  border-radius: 12px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1cc040;
+  display: none;
+  animation: popupAnim 0.4s ease;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .box {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  select,
+  button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .center-msg {
+    font-size: 38px;
+    padding: 10px 20px;
+    width: 350px;
+  }
+}

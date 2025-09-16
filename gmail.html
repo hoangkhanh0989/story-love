@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đóng góp ý kiến</title>
+    <link rel="stylesheet" href="./assets/styles/gmail.css" />
+  </head>
+  <body>
+    <div class="container" id="formContainer">
+      <h2>Đóng góp ý kiến</h2>
+      <input type="text" id="name" placeholder="Nhập tên của bạn" />
+      <input
+        type="email"
+        id="email"
+        placeholder="Nhập email của bạn (không bắt buộc)"
+      />
+      <input type="text" id="title" placeholder="Tiêu đề" />
+      <textarea
+        id="content"
+        rows="4"
+        placeholder="Nhập nội dung"
+        required
+      ></textarea>
+      <button onclick="submitForm()">Gửi</button>
+      <a href="./suynghi.html"><button onclick="">Quay lại</button></a>
+      <div id="errorMessage"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/logic/gmail.js"></script>
+  </body>
+</html>

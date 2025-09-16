@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 2: Thích và tỏ tình</title>
+    <link rel="stylesheet" href="./assets/styles/chuong2.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="controls" id="giftSection">
+        <h2>Chọn món quà đầu tặng cô ấy</h2>
+        <select id="giftSelect">
+          <option value="">-- Chọn quà --</option>
+          <option value="hoa">Hoa</option>
+          <option value="banhkeo">Bánh kẹo</option>
+          <option value="gaubong">Gấu bông</option>
+          <option value="quanao">Quần áo</option>
+        </select>
+        <button onclick="chooseGift()">Tặng quà</button>
+        <div id="giftMsg" class="error"></div>
+      </div>
+
+      <!-- Nội dung chương -->
+      <div id="chapterContent">
+        <h2>Chương 2: Thích và tỏ tình</h2>
+        <p><i>Giai đoạn này kéo dài 5 tháng sau đó</i></p>
+        <p>
+          Tháng ngày trôi qua, chúng tôi bắt đầu nhận ra những rung động đặc
+          biệt trong lòng mình. Mỗi tin nhắn, mỗi lần gặp gỡ đều khiến trái tim
+          tôi rung lên nhịp dồn dập mà chưa từng trải qua trước đây.
+        </p>
+        <p>
+          Lần đồng hành thứ hai, khi đi quân sự, chúng tôi cùng nhau vượt qua
+          những thử thách nhỏ, trò chuyện, cười đùa và thậm chí là những khoảnh
+          khắc im lặng đầy ý nghĩa. Tôi bắt đầu thấy mình không thể thiếu cô ấy.
+        </p>
+        <p>
+          Một buổi chiều đầu tháng 6, tôi quyết định tặng cô ấy món quà nhỏ.
+          Cùng với món quà, tôi thốt lên lời: "Mọi lời đồn đều có căn cứ cả và
+          chuyện tớ thích cậu là có thật". Khoảnh khắc ấy, trái tim tôi như vỡ
+          òa.
+        </p>
+        <p>
+          Cô ấy nhìn tôi và có thể đã nhận ra sự thay đổi của tôi từ trước khi
+          khoảnh khắc này diễn ra rồi.
+        </p>
+        <p>
+          Nhưng chuyện tình chưa dừng lại ở đây… Liệu chúng tôi có thể cùng nhau
+          vượt qua những thử thách phía trước, hướng tới tương lai mà tôi vẫn
+          luôn mơ ước?
+        </p>
+
+        <div class="chapter-nav">
+          <a
+            href="chuong1.html"
+            class="back-btn"
+            onclick="localStorage.setItem('chapterUnlocked', '2')"
+          >
+            ⬅ Quay lại
+          </a>
+          <a
+            href="chuong3.html"
+            class="next-btn"
+            onclick="localStorage.setItem('chapterUnlocked', '3')"
+          >
+            Đọc tiếp ➡
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thông báo chính giữa -->
+    <div id="centerMsg" class="center-msg">Chuẩn rồi đấy</div>
+    <script src="./assets/logic/chuong2.js"></script>
+  </body>
+</html>

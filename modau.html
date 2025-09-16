@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Danh sách chương</title>
+    <link rel="stylesheet" href="./assets/styles/modau.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>4 CHƯƠNG CHUNG CỦA MỘT MỐI QUAN HỆ</h1>
+      <ul class="list" id="chaptersList">
+        <li class="item" data-ch="1">
+          <div class="index">1</div>
+          <div class="meta">
+            <h3>Chương 1: Làm quen rồi làm bạn</h3>
+            <p class="short">
+              Khởi đầu của một mối tình là phải làm quen trước sau đó là bạn bè
+              đã đúng không
+            </p>
+          </div>
+          <button class="toggle-btn" aria-expanded="false">
+            <a href="./chuong1.html">Xem</a>
+          </button>
+        </li>
+        <li class="item" data-ch="2">
+          <div class="index">2</div>
+          <div class="meta">
+            <h3>Chương 2: Thích và tỏ tình</h3>
+            <p class="short">
+              Khoảnh khắc này vừa ngại, vừa dâng trào, nhưng cũng sợ người ta
+              không đồng ý nhưng tôi đã nói thích rồi nói yêu.
+            </p>
+          </div>
+          <button class="toggle-btn" aria-expanded="false">
+            <a href="./chuong2.html">Xem</a>
+          </button>
+        </li>
+        <li class="item" data-ch="3">
+          <div class="index">3</div>
+          <div class="meta">
+            <h3>Chương 3: Làm người yêu</h3>
+            <p class="short">
+              Giai đoạn yêu đương — hẹn hò, chăm sóc, và vượt qua những bất đồng
+              đầu tiên.
+            </p>
+          </div>
+          <button class="toggle-btn" aria-expanded="false">
+            <a href="./chuong3.html">Xem</a>
+          </button>
+        </li>
+        <li class="item" data-ch="4">
+          <div class="index">4</div>
+          <div class="meta">
+            <h3>Chương 4: Mở ra một tương lai lâu dài</h3>
+            <p class="short">
+              Đây là bước cuối cùng mà bất kể mqh nào cũng hướng tới
+            </p>
+          </div>
+          <button class="toggle-btn" aria-expanded="false">Xem</button>
+        </li>
+      </ul>
+      <button class="review-btn" onclick="resetToChapter1()">
+        Tìm hiểu lại câu chuyện
+      </button>
+    </div>
+    <script src="./assets/logic/modau.js"></script>
+  </body>
+</html>

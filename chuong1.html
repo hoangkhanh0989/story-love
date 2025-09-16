@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 1: Làm quen</title>
+    <link rel="stylesheet" href="./assets/styles/chuong1.css" />
+  </head>
+  <body>
+    <div class="setup">
+      <h2>Chọn khoảng thời gian làm quen con gái nhà người ta</h2>
+      <select id="timeSelect">
+        <option value="">-- Chọn --</option>
+        <option value="1">1 tháng</option>
+        <option value="3">3 tháng</option>
+        <option value="5">5 tháng</option>
+        <option value="12">1 năm</option>
+      </select>
+      <button id="confirmBtn">Xác nhận</button>
+      <div id="errorMsg" class="error"></div>
+    </div>
+
+    <div class="chapter" id="chapterContent">
+      <h2>Chương 1: Làm quen rồi làm bạn</h2>
+      <p>
+        <i>Quãng thời gian này kéo dài 5 tháng: từ 10/2023 đến hết 2/2024.</i>
+      </p>
+      <p>
+        Thực ra chúng tôi đã biết nhau từ năm nhất đại học, nhưng chỉ dừng lại ở
+        mức bạn cùng lớp. Mãi đến sau này, khi cơ hội đưa đẩy, chúng tôi mới
+        thật sự bắt đầu trò chuyện và hiểu nhau nhiều hơn.
+      </p>
+      <p>
+        Trong lớp, cô ấy là nữ duy nhất giữa một tập thể toàn nam, vừa đặc biệt
+        lại vừa dễ khiến người khác chú ý. Nhưng tôi thì lúc đầu vẫn coi như
+        bình thường, cho đến khi những cuộc nói chuyện dần trở nên thú vị hơn cả
+        mong đợi.
+      </p>
+      <p>
+        Tin nhắn ngày một nhiều, những câu chuyện tưởng chừng vụn vặt lại kéo
+        chúng tôi lại gần hơn. Tôi dần nhận ra cảm xúc của mình không chỉ là bạn
+        bè. Và rồi, chuyến thực tập đầu tiên của cả lớp cũng chính là lần đầu
+        tiên chúng tôi đồng hành cùng nhau...
+      </p>
+      <p>
+        Nhưng mọi chuyện mới chỉ bắt đầu từ đây thôi. Câu chuyện phía sau còn
+        nhiều điều bất ngờ hơn nữa. Đọc tiếp ở chương 2 nha!
+      </p>
+
+      <div class="chapter-nav">
+        <a
+          href="modau.html"
+          class="back-btn"
+          onclick="localStorage.setItem('chapterUnlocked', '2')"
+        >
+          ⬅ Quay lại
+        </a>
+        <a
+          href="chuong2.html"
+          class="next-btn"
+          onclick="localStorage.setItem('chapterUnlocked', '3')"
+        >
+          Đọc tiếp ➡
+        </a>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">Vừa vặn rồi đó</div>
+    <script src="./assets/logic/chuong1.js"></script>
+  </body>
+</html>
